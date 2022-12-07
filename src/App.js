@@ -169,7 +169,7 @@ function App() {
 					})}
 			</div>			
         </section>
-		</main>
+		</main> //trial
 		
 	</div>
 	
