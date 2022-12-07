@@ -1,0 +1,148 @@
+[
+	{
+		"name": "Calzones",
+		"description": "Delicious calzones with vegetables and chicken sausage",
+		"cooktime": 45,	
+		"image": "https://unsplash.com/photos/rcUw6b4iYe0",
+		"ingredients": ["1 cup warm water", "1 package active dry yeast", "1 tsp sugar", "2 1/2 cup bread flour", "2 tbsp olive oil", "1 tsp salt", "cheese (you can pick)", "pizza tomato sauce", "chicken sausage", "cook at 450F"],
+		"category": "dinner",
+		"index": 1,
+		"calories": 200,
+		"difficulty": "hard"
+	},
+
+	{
+		"name": "Four Cheese Pizza",
+		"description": "Home made pizza with mozzarella, gorgonzola, Parmigiano Reggiano, and goat cheese",
+		"cooktime": 60,
+		"image": "https://unsplash.com/photos/MQUqbmszGGM",
+		"ingredients": ["1 cup warm water", "1 package active dry yeast", "1 tsp sugar", "2 1/2 cup bread flour", "2 tbsp olive oil", "1 tsp salt", "cheese (you can pick)", "pizza tomato sauce", "cook at 450F"],
+		"category": "dinner",
+		"index": 2,
+		"calories": 200,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Baileys Brownies",
+		"description": "Fluffy brownies that will get you drunk",
+		"cooktime": 60,
+		"image": "https://unsplash.com/photos/_BUlk40NTNU",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dessert",
+		"index": 3,
+		"calories": 500,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Chocolate Cake",
+		"description": "Amazing chocolate cake with chocolate ganache",
+		"cooktime": 45,
+		"image": "https://unsplash.com/photos/6jHpcBPw7i8",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dessert",
+		"index": 4,
+		"calories": 400,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Espresso Martini",
+		"description": "A cold caffeinated dessert with alcohol",
+		"cooktime": 5,
+		"image": "https://unsplash.com/photos/7D43yvQt960",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "drink",
+		"index": 5,
+		"calories": 90,
+		"difficulty": "easy"
+	},
+	{
+		"name": "Rosemary Bread",
+		"description": "A loaf of warm, freshly-baked rosemary bread.",
+		"cooktime": 180,
+		"image": "https://unsplash.com/photos/kzk5WrJlxds",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dinner",
+		"index": 6,
+		"calories": 300,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Tiramisu",
+		"description": "A delicious Tiramisu, goes great with Espresso on the side.",
+		"cooktime": 30,
+		"image": "https://unsplash.com/photos/4El3DUkQs2g",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dessert",
+		"index": 7,
+		"calories": 400,
+		"difficulty": "easy"
+	},
+	{
+		"name": "Fresh Pasta",
+		"description": "If you want to feel like you're living in Venice, Italy.",
+		"cooktime": 60,
+		"image": "https://unsplash.com/photos/ddZYOtZUnBk",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dinner",
+		"index": 8,
+		"calories": 400,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Pan Seared Salmon",
+		"description": "Fresh out of the Ocean!",
+		"cooktime": 30,
+		"image": "https://unsplash.com/photos/bpPTlXWTOvg",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dinner",
+		"index": 9,
+		"calories": 200,
+		"difficulty": "easy"
+	},
+	{
+		"name": "Cheesecake",
+		"description": "A hear warming, delicious, sweet bite.",
+		"cooktime": 180,
+		"image": "https://unsplash.com/photos/EbRBhZ-I_p8",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dessert",
+		"index": 10,
+		"calories": 500,
+		"difficulty": "hard"
+	},
+	{
+		"name": "Mimosa",
+		"description": "Amazing breakfast drink if you ever want to feel tipsy at 8 am or get over your hangover.",
+		"cooktime": 10,
+		"image": "https://unsplash.com/photos/T7heq8rawkc",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "drink",
+		"index": 11,
+		"calories": 80,
+		"difficulty": "easy"
+	},
+	{
+		"name": "Granola Bowl",
+		"description": "Feel healthy for a bit.",
+		"cooktime": 20,
+		"image": "https://unsplash.com/photos/iNWjJJXeym4",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "dessert",
+		"index": 12,
+		"calories": 150,
+		"difficulty": "easy"
+	},
+	
+	{
+		"name": "Rum Martinez",
+		"description": "An amazing cocktail from a Japanese bartender, Takumi Watanabe",
+		"cooktime": 20,	
+		"image": "https://unsplash.com/photos/fsI-_MRsic0",
+		"ingredients": ["1/2 cups of milk", "flour"],
+		"category": "drink",
+		"index": 13,
+		"calories": 100,
+		"difficulty": "hard"
+	}
+  ]
+  

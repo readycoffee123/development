@@ -1,38 +1,216 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+	background-color: rgb(251, 236, 252);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+	/* font-family: 'Inconsolata', monospace; */
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	padding-left: 10%;
+	padding-top: 1%;	
+}
+
+/* this is the thing that keeps everything inside for EACH recipe */
+.recipe-container { 
+	padding: 2%;
+	padding-bottom: 0%;
+	margin: 1%;
+	margin-bottom: 0%;
+	/* display: flex;
+	flex-wrap: wrap; */
+	display: flex;
+	flex-direction: column;	
+	text-align: center;
+	/* flex-basis: 40%; */
+	width: 250px;
+	
+}
+
+.recipe-container img {
+	width: 250px;
+	height: 400px;
+	align-self: center;
+	align-content: center;
+	object-fit: cover; 
+}
+
+.button-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 5%;
   }
+
+/* this is the thing that keeps ALL recipes together */
+.item-container {
+	
+	/* width: 50%; */
+	/* height: 500px; */
+	width: 100%;
+	justify-content: center;
+	/* list-style: none; */
+  	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* padding: 2%; */
+	/* margin-right: 2%;
+    margin-left: 2%;
+	padding-bottom: 2%; */
+	align-self: center;
+	align-content: center;
+	
+	
+	/* display: inline-block; */
+	/* text-align: center; */
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .item-container p {
+	height: 50px; */
+/* } */
+
+.all-container {
+	margin-right: auto;
+    margin-left: auto;
+	width: 80%;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	/* background-color: aliceblue; */
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-name {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: x-large;
+
+	padding: 0px;
+	margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.recipe-description {
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+	margin: 0px;
+	margin-top: 5px;
+}
+
+
+ .button-meal {
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: large;	
+ }
+
+ .button-meal:hover {
+	font-weight: bold;
+	opacity: 1;
+ }
+
+ .button-description {
+	font-family: 'Inter', sans-serif;
+	font-size: x-large;
+	color: black;
+	padding-bottom: 3px;
+	border-bottom: 5px solid black;
+	
+ }
+
+ .remove-button {
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	color: red;
+	cursor: pointer;
+	opacity: 0.3;
+	font-size: large;
+ }
+
+ .remove-button:hover {
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	color: red;
+	cursor: pointer;
+	opacity: 1;
+	font-size: large;
+ }
+
+ .cart-ul {
+	/* list-style: none; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+
+ }
+
+
+ .flext-cart {
+	display: flex;
+	flex-direction: column;
+ }
+
+ .addToFav {
+	margin-bottom: 10px;
+	color: black;
+	background-color: transparent;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	font-size: large;
+	border: 2px solid black;
+ }
+
+ .addToFav:hover {
+	opacity: 0.85;
   }
-  to {
-    transform: rotate(360deg);
+
+
+ /* following was inspired from https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering */
+ /* this is to add text over an image upon hovering. */
+ .img-container {
+	position: relative;
+  } 
+  
+  .ingredient {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgb(248, 194, 243);
+	color: black;
+	visibility: hidden;
+	text-align: center;
+	opacity: 0;
+	font-family: 'Inconsolata', monospace;
+	transition: opacity .2s;
+	font-size: large;
+	
   }
-}
+  
+  .img-container:hover .ingredient {
+	visibility: visible;
+	opacity: 0.85;
+  }
+
+/* li {
+	display: block;
+	list-style-type:circle;
+} */
+
