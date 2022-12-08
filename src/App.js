@@ -18,8 +18,24 @@ function App() {
 	const[filterCategory, setFilterCategory] = useState("");
 	const[filterCategoryDifficulty, setFilterCategoryDifficulty] = useState("");
 	const[sort, setsort] = useState(false)
-
+	const[original, setOriginal] = useState(false)
 	
+	const revertOriginal = (cpy) => {
+		// if (!(array === CookData)) {
+		if (original === true) {
+			setOriginal(false)
+			setsort(false)
+			setFilterCategoryDifficulty("")
+			setFilterCategory("")
+			
+			const cpy2 = [...CookData]
+			return cpy2
+		}
+		if (original === false) {
+			return cpy
+		}
+	}
+
 	const filterResult = (filtered) => {
 		if (filterCategory === "") {
 			return filtered
@@ -69,10 +85,11 @@ function App() {
 		// console.log(result)
 		result = filterResultDifficulty(result);
 		// result = sortCalories(result);
+		result = revertOriginal(result);
 		
 		setData(result);
 	// }, [filterCategory, sortResult, sortMyCalories]); // dependency array. if these change then it will get called.
-	}, [filterCategory, sort, filterCategoryDifficulty])
+	}, [filterCategory, sort, filterCategoryDifficulty, original])
 
 	
 	const calcTotalCalories = cart => {
@@ -91,7 +108,7 @@ function App() {
 			
 		<section className= "all-container">
 			<div className="button-container">
-			<button type="button" className="button-meal" onClick={() => setData(CookData)}> RESET FILTERS</button>
+			<button type="button" className="button-meal" onClick={() => setOriginal(true)}> RESET FILTERS</button>
 				
 				<p className="button-description"> Filter by difficulty</p>
 	
@@ -117,7 +134,6 @@ function App() {
 						{cart.map((values, i) => {
 							return (	
 								<>
-								
 									<li className="cart-li" key = {values.index}>  {values.name} , {values.calories}
 									<button className = "remove-button" onClick={() => {
 										const cpy = [...cart]
@@ -169,7 +185,7 @@ function App() {
 					})}
 			</div>			
         </section>
-		</main> //trial
+		</main>
 		
 	</div>
 	
