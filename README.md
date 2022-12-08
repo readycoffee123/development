@@ -15,7 +15,16 @@ The website is organized in a way that it is easy to view the recipes and also t
 
 ### Organization of Components
 
+The organization of the website includes a component structure for a single FoodCard (FoodCard.js). 
+
+FoodCard represents each Item in the website, where Items are each recipes listed in the page. Each card includes information regarding the image for the recipe, the description of the item, category of the meal, the cooktime for the meal or drink, the difficulty, calorie information, and the name of the recipe. This information will be filled by the JSON file where each information is stored.  
+
 ### How Data is Passed Down Through Components
 
+As mentioned above, there is a JSON file that stores information for each recipe, including the name of the recipe, description for the recipe, cookitme, difficulty, calorie information, category, image for the recipe, and ingredients. In App.js file, this information is used to filter and sort according to the cooktime, calories, difficulty, and meal type for the users to pick the best recipe for the day. In a similar way, the information is also used for the cart structure and also to count the total number of calories in the cart (which stores the favorites that the user added).
+
+To display all the recipes, the information from the JSON file is also passed to the FoodCard component inside the App.js file. 
+
 ### How the User Triggers State Changes
+
 
