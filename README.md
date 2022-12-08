@@ -27,5 +27,7 @@ To display all the recipes, the information from the JSON file is also passed to
 
 ### How the User Triggers State Changes
 
-The user can do three things from this website: sorting, filtering, and adding it to their favorites cart to display the total number of calories. If the user wants to sort anything, They can either sort by calories or cooktime. In either way, the constant sortstuff is used. This constant has an if-else statement where if the value is false, the items will be sorted by cook time and if it is true, the items will be sorted by calories. When the user wants to sort, the useEffect() function will be called, which makes all the sorting and filtering work togehter using a dependency array.
+The user can do three things from this website: sorting, filtering, and adding it to their favorites cart to display the total number of calories. If the user wants to sort anything, They can either sort by calories or cooktime. In either way, the constant sortstuff is used. This constant has an if-else statement where if the value is false, the items will be sorted by cook time and if it is true, the items will be sorted by calories. When the user wants to sort, the useEffect() function will be called, which makes all the sorting and filtering work togehter using a dependency array. Filtering works in a similar way with constants filterResult (to filter category - dinner, dessert, drinks) and filterResultDifficulty (to filter category - easy or hard). These all again get activated with useEffect() function with a dependency array to update the resultant array.
+
+
 
